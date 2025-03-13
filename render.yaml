@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: coordinate-calculator
+    env: python
+    buildCommand: pip install -r heroku-requirements.txt
+    startCommand: gunicorn main:app
+    envVars:
+      - key: SESSION_SECRET
+        generateValue: true
