@@ -1,0 +1,57 @@
+/* Custom styles to enhance the Bootstrap theme */
+
+/* Make coordinate input cards equal height */
+.card {
+    height: 100%;
+}
+
+/* Add some space between inputs */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Smooth transitions for card display */
+#resultsCard, #errorAlert {
+    transition: all 0.3s ease;
+}
+
+/* Add some emphasis to the results */
+#distanceResult {
+    color: var(--bs-success);
+}
+
+/* Special style for error message */
+#errorMessage {
+    font-weight: 500;
+}
+
+/* Make preset buttons wrap nicely */
+.preset-btn {
+    margin-bottom: 0.5rem;
+}
+
+/* Add subtle hover effect to cards */
+.card:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure the page has a minimum height */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Push main content to fill available space */
+.container {
+    flex: 1;
+}
+
+/* Make recent calculations section more attractive */
+#recentCalculations .list-group-item {
+    transition: background-color 0.2s ease;
+}
+
+#recentCalculations .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
